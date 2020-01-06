@@ -87,3 +87,17 @@ The following endpoints are available to test the functionality of the model met
 - Add the following method to your API
   - `addStep(step, scheme_id)`: This method expects a step object and a scheme id. It inserts the new step into the database, correctly linking it to the intended scheme.
   - You may use `POST /api/schemes/:id/addStep` to test this method.
+
+
+# Extra Content
+
+Sometimes, in my travels, I find things that I think are worth sharing.
+
+This is one of those times.
+
+Check out [The mark down file for the errorHandler](./errorHandler.md) to see how you can use express's built in error middleware!
+
+And, peruse through the schemes folder. There are two groups here:
+- `scheme-model.js` plus `scheme-router.js`
+- `scheme-model-new.js`, `scheme-router-new.js`, *and* `scheme-service.js`
+The scheme-service file is a little something that can help keep the router and model files cleaner. Check 'em out, and see how they work!
