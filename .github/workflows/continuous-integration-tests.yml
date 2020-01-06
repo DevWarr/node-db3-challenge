@@ -5,5 +5,5 @@ jobs:
   build:
     name: CI with npm test
     steps:
-      name: Setup Node.js for use with actions
-      uses: actions/setup-node@v1.1.0
+      - name: Setup Node.js for use with actions
+        uses: actions/setup-node@v1.1.0
