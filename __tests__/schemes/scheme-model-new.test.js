@@ -14,6 +14,7 @@ describe("Schemes model", () => {
         await db("schemes").truncate();
         await db("schemes").insert(schemeData);
         await db("steps").insert(stepData);
+        return;
     })
 
     test(`"find()" returns all schemes in db`, async () => {
