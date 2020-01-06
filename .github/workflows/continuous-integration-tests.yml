@@ -1,7 +1,2 @@
-name: Test on Pull Request
-on: pull_request
-
-jobs:
-  build:
-    name: Setup Node.js for use with actions
-    uses: actions/setup-node@v1.1.0
+name: Setup Node.js for use with actions
+uses: actions/setup-node@v1.1.0
