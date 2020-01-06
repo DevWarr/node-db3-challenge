@@ -7,7 +7,7 @@
     "server": "nodemon index.js",
     "start": "node index.js",
     "test": "cross-env DB_ENV=testing jest --watch",
-    "CI": "cross-env DB_ENV=testing jest"
+    "CI": "cross-env DB_ENV=testing jest --detectOpenHandles"
   },
   "jest": {
     "testEnvironment": "node"
