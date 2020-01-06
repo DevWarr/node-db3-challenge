@@ -3,7 +3,10 @@ on: pull_request
 
 jobs:
   build:
-    name: CI with npm test
     steps:
-      - name: Setup Node.js for use with actions
-        uses: actions/setup-node@v1.1.0
+      - uses: actions/checkout@v1
+      - uses: actions/setup-node@v1.1.0
+        with:
+          node-version: "10.x"
+      - run: npm install
+      - run: npm test
