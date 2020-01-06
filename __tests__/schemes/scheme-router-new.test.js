@@ -1,22 +1,22 @@
-// const request = require("supertest");
-// const express = require("express");
-// const schemeRouter = require("../../schemes/scheme-router-new");
-// const schemeService = require("../../schemes/scheme-service");
+const request = require("supertest");
+const express = require("express");
+const schemeRouter = require("../../schemes/scheme-router-new");
+const schemeService = require("../../schemes/scheme-service");
 
-// server = express();
-// server.use(express.json())
-// server.use("", schemeRouter);
-// server.use((err, req, res, next) => {
-//     const errObj = {
-//         status: err.status || 500,
-//         details: err.details || "Internal Server Error"
-//     }
-//     res.status(errObj.status).json(errObj);
-// })
+server = express();
+server.use(express.json())
+server.use("", schemeRouter);
+server.use((err, req, res, next) => {
+    const errObj = {
+        status: err.status || 500,
+        details: err.details || "Internal Server Error"
+    }
+    res.status(errObj.status).json(errObj);
+})
 
-// test("We are in testing mode", () => {
-//     expect(process.env.DB_ENV).toEqual("testing");
-// })
+test("We are in testing mode", () => {
+    expect(process.env.DB_ENV).toEqual("testing");
+})
 
 // describe("Schemes router", () => {
 
