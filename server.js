@@ -5,6 +5,8 @@ const errorHandler = require("./middleware/errorHandler");
 
 const server = express();
 
+
+// Testing comments
 server.use(express.json());
 
 server.get("/", (req, res) => {
