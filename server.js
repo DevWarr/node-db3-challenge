@@ -1,11 +1,14 @@
 const express = require('express');
 
 const SchemeRouter = require('./schemes/scheme-router-new.js');
+
+
+// error handler from express
 const errorHandler = require("./middleware/errorHandler");
 
 const server = express();
 
-
+// test comment
 // Testing comments
 server.use(express.json());
 
