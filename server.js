@@ -6,6 +6,12 @@ const errorHandler = require("./middleware/errorHandler");
 const server = express();
 
 server.use(express.json());
+
+server.get("/", (req, res) => {
+    res.send("We up, bro")
+})
+
+
 server.use('/api/schemes', SchemeRouter);
 server.use(errorHandler);
 
